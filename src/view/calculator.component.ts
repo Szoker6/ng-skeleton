@@ -6,6 +6,11 @@ import {Component} from '@angular/core';
     styleUrls: ['calculator.component.css']
 })
 export class CalculatorComponent {
-    constructor() {
+    firstNumber = "1";
+    secondNumber = "2";
+    sum = 0;
+
+    sumNumbers() {
+        this.sum = parseInt(this.firstNumber) + parseInt(this.secondNumber);
     }
 }
