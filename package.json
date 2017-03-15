@@ -7,7 +7,7 @@
     "compile:watch": "./node_modules/typescript/bin/tsc -w -p .",
     "compile:test": "./node_modules/typescript/bin/tsc -p .",
     "e2e": "./node_modules/.bin/protractor ./config/protractor.conf.js",
-    "serve": "./node_modules/.bin/webpack-dev-server --progress --host '0.0.0.0' --port 8081",
+    "serve": "./node_modules/.bin/webpack-dev-server --progress --port 8081",
     "start": "npm run serve",
     "test": "./node_modules/.bin/karma start karma.conf.js --single-run"
   },
