@@ -6,15 +6,14 @@ import {FormsModule} from '@angular/forms';
 import {SumViewComponent} from "../view/sum/sum-view.component";
 import {MultiplyViewComponent} from "../view/multiply/multiply-view.component";
 import {SubViewComponent} from "../view/sub/sub-view.component";
-import {ShareViewComponent} from "../view/share/share-view.component";
-
+import {DivideViewComponent} from "../view/divide/divide-view.component";
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule
   ],
   declarations: [
-    CalculatorComponent, SumViewComponent, MultiplyViewComponent, SubViewComponent, ShareViewComponent
+    CalculatorComponent, SumViewComponent, MultiplyViewComponent, SubViewComponent, DivideViewComponent
   ],
   bootstrap: [CalculatorComponent],
   providers: []

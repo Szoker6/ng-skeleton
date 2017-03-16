@@ -8,8 +8,12 @@
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
         <li><a href="#" (click)="changeCalculationType('sum')">Dodawanie</a></li>
         <li><a href="#" (click)="changeCalculationType('multiply')">Mnozenie</a></li>
+        <li><a href="#" (click)="changeCalculationType('sub')">Odejmowanie</a></li>
+        <li><a href="#" (click)="changeCalculationType('divide')">Dzielenie</a></li>
     </ul>
 </div>
 
 <ng-sum-view *ngIf="calculationType == 'sum'"></ng-sum-view>
 <ng-multiply-view *ngIf="calculationType == 'multiply'"></ng-multiply-view>
+<ng-sub-view *ngIf="calculationType == 'sub'"></ng-sub-view>
+<ng-divide-view *ngIf="calculationType == 'divide'"></ng-divide-view>
