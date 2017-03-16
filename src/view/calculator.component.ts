@@ -6,5 +6,9 @@ import {Component} from '@angular/core';
     styleUrls: ['calculator.component.css']
 })
 export class CalculatorComponent {
+    calculationType = "sum";
 
+    changeCalculationType(type:string) {
+        this.calculationType = type;
+    }
 }

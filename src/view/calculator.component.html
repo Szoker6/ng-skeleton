@@ -1,4 +1,15 @@
 <div class="calculator-header">Calculator</div>
 
-<ng-sum-view></ng-sum-view>
-<ng-multiply-view></ng-multiply-view>
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Wybierz typ obliczenia
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#" (click)="changeCalculationType('sum')">Dodawanie</a></li>
+        <li><a href="#" (click)="changeCalculationType('multiply')">Mnozenie</a></li>
+    </ul>
+</div>
+
+<ng-sum-view *ngIf="calculationType == 'sum'"></ng-sum-view>
+<ng-multiply-view *ngIf="calculationType == 'multiply'"></ng-multiply-view>
