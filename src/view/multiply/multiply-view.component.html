@@ -1,0 +1,10 @@
+<div class="input-group">
+    <span class="input-group-addon">Pierwsza liczba:</span>
+    <input type="text" [(ngModel)]="firstNumber" class="form-control" aria-describedby="basic-addon1">
+</div>
+<div class="input-group">
+    <span class="input-group-addon">Pierwsza druga:</span>
+    <input type="text" [(ngModel)]="secondNumber" class="form-control" aria-describedby="basic-addon1">
+</div>
+{{ multiply }}
+<button type="submit" class="btn btn-success" (click)="multiplyNumbers()">Oblicz</button>
